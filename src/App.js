@@ -8,6 +8,18 @@ const Shop = () => {
     <h1>This is Shop page!</h1>
   )
 }
+
+const Contact = () => {
+  return(
+    <h1>This is Contact page!</h1>
+  )
+}
+
+const Signin = () => {
+  return(
+    <h1>This is Siginin page!</h1>
+  )
+}
   
 const App = () => {
   return (
@@ -15,6 +27,8 @@ const App = () => {
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="signin" element={<Signin />} />
       </Route>
     </Routes>
   )
